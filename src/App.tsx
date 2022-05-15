@@ -11,6 +11,12 @@ export default function App() {
   const [find, setFind] = useState("");
   const chicagoLink = "https://api.artic.edu/api/v1/artworks/search?q=";
 
+  function HandleChange(event: any) {
+    const e = event.target.value;
+    setFind(e);
+
+    return e;
+  }
   function concatSearch() {
     const link = chicagoLink + find;
 
@@ -31,12 +37,6 @@ export default function App() {
 
   console.log(`this is imageIdObj ${imageIdObj}`);
 
-  function HandleChange(event: any) {
-    const e = event.target.value;
-    setFind(e);
-
-    return e;
-  }
   function apiLink() {
     fetch(linkApi, requestOptions)
       .then((response) => response.json())
