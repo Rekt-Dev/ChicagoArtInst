@@ -52,9 +52,9 @@ export default function App() {
         <br />
       </div>
 
-     
+      
       <div>
-        {json.map((obj) => (
+        {json.map((obj) => ( 
           <Card
             key={obj.id}
             artistName={obj.name}
