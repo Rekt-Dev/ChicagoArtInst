@@ -19,6 +19,19 @@ export default function App() {
       .then((data) => console.log(data));
   }
 
+  function apiLink ()  {
+
+    const linkApi="https://api.artic.edu/api/v1/artworks/103332"
+
+    fetch(linkApi, requestOptions)
+  .then((response) => response.json())
+  .then((data) => console.log(data));
+  }
+
+  
+  
+
+
   function HandleChange(event: any) {
     const e = event.target.value;
     setFind(e);
@@ -27,33 +40,19 @@ export default function App() {
   }
 
   return (
+    <Header />
+    
     <div>
-      <h1 className="box">The Art Institute of Chicago</h1>
+    {json.map((obj) => (
+      <Card
+        key={obj.id}
+        artistName={obj.name}
+        title={obj.title}
+        year={obj.year}
+      />
+    ))}
+  </div>
+)
 
-      <div className="center">
-        <input onChange={HandleChange} placeholder="Enter your search here" />
-      </div>
-      <div className="center">
-        <button onClick={concatSearch} type="button" className="btn btn-info">
-          Search
-        </button>
-        <button onClick={lucky} className="btn btn-info" type="button">
-          Randomize it !
-        </button>
-
-        <br />
-      </div>
-
-      <div>
-        {json.map((obj) => (
-          <Card
-            key={obj.id}
-            artistName={obj.name}
-            title={obj.title}
-            year={obj.year}
-          />
-        ))}
-      </div>
-    </div>
-  );
+     
 }
