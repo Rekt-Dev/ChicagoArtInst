@@ -23,10 +23,6 @@ export default function App() {
     const e = event.target.value;
     setFind(e);
 
-    console.log(`this is e ${e}`);
-    console.log(`this is e.trgt.vlu ${e}`);
-    console.log("theres been a change");
-
     return e;
   }
 
@@ -60,9 +56,4 @@ export default function App() {
       </div>
     </div>
   );
-}
-{
-  /* <div>
-  <SearchPage />
-</div> */
 }
