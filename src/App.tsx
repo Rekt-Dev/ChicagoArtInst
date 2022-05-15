@@ -52,8 +52,7 @@ export default function App() {
         <br />
       </div>
 
-      {/* <div>{json.map(renderCard)}</div> */}
-      {/* <div>{json.map(obj=>renderCard(obj))}</div> */}
+     
       <div>
         {json.map((obj) => (
           <Card
