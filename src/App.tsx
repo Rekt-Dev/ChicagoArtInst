@@ -31,17 +31,16 @@ export default function App() {
 
   console.log(`this is imageIdObj ${imageIdObj}`);
 
-  function apiLink() {
-    fetch(linkApi, requestOptions)
-      .then((response) => response.json())
-      .then((data) => console.log(data));
-  }
-
   function HandleChange(event: any) {
     const e = event.target.value;
     setFind(e);
 
     return e;
+  }
+  function apiLink() {
+    fetch(linkApi, requestOptions)
+      .then((response) => response.json())
+      .then((data) => console.log(data));
   }
 
   return (
