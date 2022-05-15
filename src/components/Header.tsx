@@ -2,7 +2,7 @@ import HandleChange from "../App";
 import concatSearch from "../App";
 import lucky from "../App";
 
-export function Header(type: any) {
+function Header(type: any) {
   return (
     <div>
       <h1 className="box">The Art Institute of Chicago</h1>
@@ -23,3 +23,5 @@ export function Header(type: any) {
     </div>
   );
 }
+
+export default Header;

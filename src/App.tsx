@@ -6,6 +6,7 @@ import { json } from "./services/importedData";
 import React, { useState } from "react";
 import Card from "./components/Card";
 import requestOptions from "./services/requestOptions";
+import Header from "./components/Header";
 
 export default function App() {
   const [find, setFind] = useState("");
@@ -19,18 +20,13 @@ export default function App() {
       .then((data) => console.log(data));
   }
 
-  function apiLink ()  {
-
-    const linkApi="https://api.artic.edu/api/v1/artworks/103332"
+  function apiLink() {
+    const linkApi = "https://api.artic.edu/api/v1/artworks/103332";
 
     fetch(linkApi, requestOptions)
-  .then((response) => response.json())
-  .then((data) => console.log(data));
+      .then((response) => response.json())
+      .then((data) => console.log(data));
   }
-
-  
-  
-
 
   function HandleChange(event: any) {
     const e = event.target.value;
@@ -40,19 +36,19 @@ export default function App() {
   }
 
   return (
-    <Header />
-    
     <div>
-    {json.map((obj) => (
-      <Card
-        key={obj.id}
-        artistName={obj.name}
-        title={obj.title}
-        year={obj.year}
-      />
-    ))}
-  </div>
-)
+      <Header />
 
-     
+      <div>
+        {json.map((obj) => (
+          <Card
+            key={obj.id}
+            artistName={obj.name}
+            title={obj.title}
+            year={obj.year}
+          />
+        ))}
+      </div>
+    </div>
+  );
 }
