@@ -1,6 +1,5 @@
 import "./styles.css";
 import "./index.css";
-import renderCard from "./components/RenderCard";
 import { lucky } from "../src/services/FeelingLucky";
 import { json } from "./services/importedData";
 import React, { useState } from "react";
@@ -20,9 +19,19 @@ export default function App() {
       .then((data) => console.log(data));
   }
 
-  function apiLink() {
-    const linkApi = "https://api.artic.edu/api/v1/artworks/103332";
+  function httpGet(theUrl: any) {
+    var xmlHttp = null;
 
+    xmlHttp = new XMLHttpRequest();
+    xmlHttp.open("GET", theUrl, false);
+    xmlHttp.send(null);
+    return xmlHttp.responseText;
+  }
+  const imageIdObj = httpGet("https://api.artic.edu/api/v1/artworks/103332");
+
+  console.log(`this is imageIdObj ${imageIdObj}`);
+
+  function apiLink() {
     fetch(linkApi, requestOptions)
       .then((response) => response.json())
       .then((data) => console.log(data));
