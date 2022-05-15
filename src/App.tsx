@@ -46,15 +46,14 @@ export default function App() {
           Search
         </button>
         <button onClick={lucky} className="btn btn-info" type="button">
-          Randomize it !{" "}
+          Randomize it !
         </button>
 
         <br />
       </div>
 
-      
       <div>
-        {json.map((obj) => ( 
+        {json.map((obj) => (
           <Card
             key={obj.id}
             artistName={obj.name}
