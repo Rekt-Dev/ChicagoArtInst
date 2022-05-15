@@ -4,7 +4,7 @@ import { lucky } from "../src/services/FeelingLucky";
 import { json } from "./services/importedData";
 import React, { useState } from "react";
 import Card from "./components/Card";
-import requestOptions from "./services/requestOptions";
+import { requestOptions } from "./services/requestOptions";
 import Header from "./components/Header";
 
 export default function App() {
