@@ -5,6 +5,7 @@ import { lucky } from "../src/services/FeelingLucky";
 import { json } from "./services/importedData";
 import React, { useState } from "react";
 import Card from "./components/Card";
+import requestOptions from "./services/requestOptions";
 
 export default function App() {
   const [find, setFind] = useState("");
@@ -12,11 +13,6 @@ export default function App() {
 
   function concatSearch() {
     const link = chicagoLink + find;
-    const requestOptions = {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ title: "Searching the db throuth the api" })
-    };
 
     fetch(link, requestOptions)
       .then((response) => response.json())
