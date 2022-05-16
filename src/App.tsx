@@ -14,9 +14,9 @@ export default function App() {
   function HandleChange(event: any) {
     const e = event.target.value;
     setFind(e);
-
     return e;
   }
+
   function concatSearch() {
     const link = chicagoLink + find;
 
@@ -34,8 +34,11 @@ export default function App() {
     return xmlHttp.responseText;
   }
   const imageIdObj = httpGet("https://api.artic.edu/api/v1/artworks/103332");
+  const linkApi = httpGet("https://api.artic.edu/api/v1/artworks/103332");
 
   console.log(`this is imageIdObj ${imageIdObj}`);
+  console.log(`this is linkApi ${linkApi}`);
+  //search inside the string for image_id and put it in a new variable
 
   function apiLink() {
     fetch(linkApi, requestOptions)
@@ -43,8 +46,12 @@ export default function App() {
       .then((data) => console.log(data));
   }
 
+  function openCard() {
+    console.log("card was clicked");
+  }
+
   return (
-    <div>
+    <div onClick={openCard}>
       <Header />
 
       <div>
