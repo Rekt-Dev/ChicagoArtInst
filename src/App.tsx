@@ -36,9 +36,10 @@ export default function App() {
   const imageIdObj = httpGet("https://api.artic.edu/api/v1/artworks/103332");
   const linkApi = httpGet("https://api.artic.edu/api/v1/artworks/103332");
 
+  console.log(typeof imageIdObj);
   console.log(`this is linkApi bleh
   ${linkApi}`);
-  console.log(`this is imageIdObj.thumbnail ${imageIdObj.api_model}`);
+  console.log(`this is imageIdObj.thumbnail ${imageIdObj}`);
 
   function apiLink() {
     fetch(linkApi, requestOptions)
