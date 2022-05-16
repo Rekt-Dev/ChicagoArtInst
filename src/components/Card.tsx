@@ -1,10 +1,6 @@
 import React from "react";
 
-// interface CardProps{
-//   link:string;
-//   artistName:string;
-//   year:string
-// }
+
 
 function Card(props: any) {
   const identifier = "229393";

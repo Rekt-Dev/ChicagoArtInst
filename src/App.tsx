@@ -25,22 +25,6 @@ export default function App() {
       .then((data) => console.log(data));
   }
 
-  function httpGet(theUrl: any) {
-    var xmlHttp = null;
-
-    xmlHttp = new XMLHttpRequest();
-    xmlHttp.open("GET", theUrl, false);
-    xmlHttp.send(null);
-    return xmlHttp.responseText;
-  }
-  const imageIdObj = httpGet("https://api.artic.edu/api/v1/artworks/103332");
-  const linkApi = httpGet("https://api.artic.edu/api/v1/artworks/103332");
-
-  console.log(typeof imageIdObj);
-  console.log(`this is linkApi bleh
-  ${linkApi}`);
-  console.log(`this is imageIdObj.thumbnail ${imageIdObj}`);
-
   function apiLink() {
     fetch(linkApi, requestOptions)
       .then((response) => response.json())
