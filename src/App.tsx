@@ -37,8 +37,7 @@ export default function App() {
   const linkApi = httpGet("https://api.artic.edu/api/v1/artworks/103332");
 
   console.log(`this is imageIdObj ${imageIdObj}`);
-  console.log(`this is linkApi ${linkApi}`);
-  //search inside the string for image_id and put it in a new variable
+  console.log(`this is linkApi bleh ${linkApi.image_id}`);
 
   function apiLink() {
     fetch(linkApi, requestOptions)
