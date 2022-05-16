@@ -9,7 +9,6 @@ export default function App() {
   return (
     <div>
       <Header />
-
       <div onClick={openCard}>
         {json.map((obj) => (
           <Card
