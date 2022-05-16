@@ -36,9 +36,9 @@ export default function App() {
   const imageIdObj = httpGet("https://api.artic.edu/api/v1/artworks/103332");
   const linkApi = httpGet("https://api.artic.edu/api/v1/artworks/103332");
 
-  console.log(`this is imageIdObj ${imageIdObj}`);
   console.log(`this is linkApi bleh
-  ${linkApi.color}`);
+  ${linkApi}`);
+  console.log(`this is imageIdObj.thumbnail ${imageIdObj.api_model}`);
 
   function apiLink() {
     fetch(linkApi, requestOptions)
@@ -51,10 +51,10 @@ export default function App() {
   }
 
   return (
-    <div onClick={openCard}>
+    <div>
       <Header />
 
-      <div>
+      <div onClick={openCard}>
         {json.map((obj) => (
           <Card
             key={obj.id}
