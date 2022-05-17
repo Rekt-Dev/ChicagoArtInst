@@ -1,4 +1,4 @@
-import lucky from "../App";
+import { lucky } from "../services/FeelingLucky";
 import React, { useState } from "react";
 import { requestOptions } from "../services/requestOptions";
 function Header(type: any) {
@@ -23,14 +23,14 @@ function Header(type: any) {
     <div>
       <h1 className="center">The Art Institute of Chicago</h1>
 
-      <div className="center" >
+      <div className="center">
         <input onChange={HandleChange} placeholder="Enter your search here" />
       </div>
       <div className="center">
-      <div className="button">
-        <button onClick={concatSearch} type="button" className="button">
-          Search
-        </button>
+        <div className="button">
+          <button onClick={concatSearch} type="button" className="button">
+            Search
+          </button>
         </div>
         <button onClick={lucky} className="button" type="button">
           Randomize it !
