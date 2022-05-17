@@ -13,7 +13,7 @@ function Header(type: any) {
   }
 
   const [find, setFind] = useState("");
-  const chicagoLink = "https://api.artic.edu/api/v1/artworks/search?q=";
+  const chicagoLink = "https://api.artic.edu/api/v1/artworks/search?q="; 
 
   function HandleChange(event: any) {
     const e = event.target.value;
