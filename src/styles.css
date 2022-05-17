@@ -48,12 +48,12 @@ input {
 
 button {
   appearance: none;
-  outline: 0;
-  background-color: white;
-  border: 0;
+  outline: 2;
+  background-color: rgb(184, 198, 199);
+  border: 30;
   padding: 10px 15px;
   color: #50a3a2;
   border-radius: 3px;
-  width: 250px;
-  font-size: 18px;
+  width: 200px;
+  font-size: 24px;
 }

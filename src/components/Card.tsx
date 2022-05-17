@@ -1,13 +1,11 @@
 import React from "react";
-
-
-
+import "../app.css"
 function Card(props: any) {
   const identifier = "229393";
   const mockLink = `https://www.artic.edu/iiif/2/1adf2696-8489-499b-cad2-821d7fde4b33/full/843,/0/default.jpg`;
   console.log(mockLink);
   return (
-    <div>
+    <div className="divWidth">
       <img width="100" height="121" alt=" 3 cats" src={mockLink} />
       <ul>
         {}

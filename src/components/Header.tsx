@@ -1,7 +1,6 @@
 import lucky from "../App";
 import React, { useState } from "react";
 import { requestOptions } from "../services/requestOptions";
-
 function Header(type: any) {
   function concatSearch() {
     const link = chicagoLink + find;
@@ -24,17 +23,18 @@ function Header(type: any) {
     <div>
       <h1 className="center">The Art Institute of Chicago</h1>
 
-      <div className="center">
+      <div className="center" >
         <input onChange={HandleChange} placeholder="Enter your search here" />
       </div>
       <div className="center">
-        <button onClick={concatSearch} type="button" className="btn btn-info">
+      <div className="button">
+        <button onClick={concatSearch} type="button" className="button">
           Search
         </button>
-        <button onClick={lucky} className="btn btn-info" type="button">
+        </div>
+        <button onClick={lucky} className="button" type="button">
           Randomize it !
         </button>
-
         <br />
       </div>
     </div>

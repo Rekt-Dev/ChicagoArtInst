@@ -9,9 +9,9 @@ export default function App() {
   return (
     <div>
       <Header />
-      <div onClick={openCard}>
+      <div className="divWidth" onClick={openCard}>
         {json.map((obj) => (
-          <Card
+          <Card 
             key={obj.id}
             artistName={obj.name}
             title={obj.title}
