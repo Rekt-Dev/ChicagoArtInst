@@ -7,7 +7,7 @@ import { openCard } from "./components/OpenCard";
 
 export default function App() {
   return (
-    <div>
+    <div >
       <Header />
       <div className="divWidth" onClick={openCard}>
         {json.map((obj) => (
