@@ -1,6 +1,8 @@
 import { lucky } from "../services/FeelingLucky";
 import React, { useState } from "react";
 import { requestOptions } from "../services/requestOptions";
+import { numToLetter } from "./Randomizer";
+
 function Header(type: any) {
   function concatSearch() {
     const link = chicagoLink + find;
@@ -32,7 +34,7 @@ function Header(type: any) {
             Search
           </button>
         </div>
-        <button onClick={lucky} className="button" type="button">
+        <button onClick={numToLetter} className="button" type="button">
           Randomize it !
         </button>
         <br />
