@@ -34,7 +34,7 @@ function Header(type: any) {
             Search
           </button>
         </div>
-        <button onClick={numToLetter} className="button" type="button">
+        <button onClick={lucky} className="button" type="button">
           Randomize it !
         </button>
         <br />
