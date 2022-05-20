@@ -3,13 +3,13 @@ import "./index.css";
 import { json } from "./services/importedData";
 import Card from "./components/Card";
 import Header from "./components/Header";
-import { openCard } from "./components/OpenCard";
+import { OpenCard } from "./components/OpenCard";
 
 export default function App() {
   return (
     <div >
       <Header />
-      <div className="divWidth" onClick={openCard}>
+      <div className="divWidth" onClick={OpenCard}>
         {json.map((obj) => (
           <Card 
             key={obj.id}
@@ -17,8 +17,14 @@ export default function App() {
             title={obj.title}
             year={obj.year}
           />
-        ))}
+
+        )
+        )
+        }
+
       </div>
+      <OpenCard />
+
     </div>
   );
 }

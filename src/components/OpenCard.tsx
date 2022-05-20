@@ -1,16 +1,15 @@
-export function openCard() {
+import mockLink from "./Card";
+export function OpenCard() {
   console.log("card was clicked");
 
-  function getImageData() {}
+  function getImageData() {
+    console.log("getImageData invoked thru openCard");
+  }
 
   return (
     <div>
       <div>
-        <img
-          src="https://www.artic.edu/iiif/2/{identifier}/full/843,/0/default.jpg
-"
-          alt="a beautiful peice"
-        />
+        <img width="200" height="250" src={mockLink} alt="a beautiful peice" />
       </div>
     </div>
   );
