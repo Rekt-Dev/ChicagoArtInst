@@ -31,7 +31,7 @@ export function numToLetter(num: any) {
       num = "b";
       console.log(`num ${num}`);
       link5 = link3 + num;
-      fetch(link5, requestOptions3)
+      fetch(link5, requestOptions)
         .then((response) => response.json())
         .then((data) => console.log(data));
 
@@ -41,7 +41,7 @@ export function numToLetter(num: any) {
       num = "c";
       console.log(`num ${num}`);
       link5 = link3 + num;
-      fetch(link5, requestOptions3)
+      fetch(link5, requestOptions)
         .then((response) => response.json())
         .then((data) => console.log(data));
 
@@ -51,7 +51,7 @@ export function numToLetter(num: any) {
       num = "d";
       console.log(`num ${num}`);
       link5 = link3 + num;
-      fetch(link5, requestOptions3)
+      fetch(link5, requestOptions)
         .then((response) => response.json())
         .then((data) => console.log(data));
 
@@ -61,7 +61,7 @@ export function numToLetter(num: any) {
       num = "e";
       console.log(`num ${num}`);
       link5 = link3 + num;
-      fetch(link5, requestOptions3)
+      fetch(link5, requestOptions)
         .then((response) => response.json())
         .then((data) => console.log(data));
 
@@ -71,7 +71,7 @@ export function numToLetter(num: any) {
       num = "f";
       console.log(`num ${num}`);
       link5 = link3 + num;
-      fetch(link5, requestOptions3)
+      fetch(link5, requestOptions)
         .then((response) => response.json())
         .then((data) => console.log(data));
 
@@ -81,7 +81,7 @@ export function numToLetter(num: any) {
       num = "g";
       console.log(`num ${num}`);
       link5 = link3 + num;
-      fetch(link5, requestOptions3)
+      fetch(link5, requestOptions)
         .then((response) => response.json())
         .then((data) => console.log(data));
 
@@ -91,7 +91,7 @@ export function numToLetter(num: any) {
       num = "h";
       console.log(`num ${num}`);
       link5 = link3 + num;
-      fetch(link5, requestOptions3)
+      fetch(link5, requestOptions)
         .then((response) => response.json())
         .then((data) => console.log(data));
 
@@ -101,7 +101,7 @@ export function numToLetter(num: any) {
       num = "i";
       console.log(`num ${num}`);
       link5 = link3 + num;
-      fetch(link5, requestOptions3)
+      fetch(link5, requestOptions)
         .then((response) => response.json())
         .then((data) => console.log(data));
 
@@ -111,7 +111,7 @@ export function numToLetter(num: any) {
       num = "j";
       console.log(`num ${num}`);
       link5 = link3 + num;
-      fetch(link5, requestOptions3)
+      fetch(link5, requestOptions)
         .then((response) => response.json())
         .then((data) => console.log(data));
 
@@ -121,7 +121,7 @@ export function numToLetter(num: any) {
       num = "k";
       console.log(`num ${num}`);
       link5 = link3 + num;
-      fetch(link5, requestOptions3)
+      fetch(link5, requestOptions)
         .then((response) => response.json())
         .then((data) => console.log(data));
 
@@ -131,7 +131,7 @@ export function numToLetter(num: any) {
       num = "l";
       console.log(`num ${num}`);
       link5 = link3 + num;
-      fetch(link5, requestOptions3)
+      fetch(link5, requestOptions)
         .then((response) => response.json())
         .then((data) => console.log(data));
 
@@ -141,7 +141,7 @@ export function numToLetter(num: any) {
       num = "m";
       console.log(`num ${num}`);
       link5 = link3 + num;
-      fetch(link5, requestOptions3)
+      fetch(link5, requestOptions)
         .then((response) => response.json())
         .then((data) => console.log(data));
 
@@ -151,7 +151,7 @@ export function numToLetter(num: any) {
       num = "n";
       console.log(`num ${num}`);
       link5 = link3 + num;
-      fetch(link5, requestOptions3)
+      fetch(link5, requestOptions)
         .then((response) => response.json())
         .then((data) => console.log(data));
 
@@ -161,7 +161,7 @@ export function numToLetter(num: any) {
       num = "o";
       console.log(`num ${num}`);
       link5 = link3 + num;
-      fetch(link5, requestOptions3)
+      fetch(link5, requestOptions)
         .then((response) => response.json())
         .then((data) => console.log(data));
 
@@ -171,7 +171,7 @@ export function numToLetter(num: any) {
       num = "p";
       console.log(`num ${num}`);
       link5 = link3 + num;
-      fetch(link5, requestOptions3)
+      fetch(link5, requestOptions)
         .then((response) => response.json())
         .then((data) => console.log(data));
 
@@ -181,7 +181,7 @@ export function numToLetter(num: any) {
       num = "q";
       console.log(`num ${num}`);
       link5 = link3 + num;
-      fetch(link5, requestOptions3)
+      fetch(link5, requestOptions)
         .then((response) => response.json())
         .then((data) => console.log(data));
 
@@ -191,7 +191,7 @@ export function numToLetter(num: any) {
       num = "r";
       console.log(`num ${num}`);
       link5 = link3 + num;
-      fetch(link5, requestOptions3)
+      fetch(link5, requestOptions)
         .then((response) => response.json())
         .then((data) => console.log(data));
 
@@ -201,7 +201,7 @@ export function numToLetter(num: any) {
       num = "s";
       console.log(`num ${num}`);
       link5 = link3 + num;
-      fetch(link5, requestOptions3)
+      fetch(link5, requestOptions)
         .then((response) => response.json())
         .then((data) => console.log(data));
 
@@ -211,7 +211,7 @@ export function numToLetter(num: any) {
       num = "t";
       console.log(`num ${num}`);
       link5 = link3 + num;
-      fetch(link5, requestOptions3)
+      fetch(link5, requestOptions)
         .then((response) => response.json())
         .then((data) => console.log(data));
 
@@ -221,7 +221,7 @@ export function numToLetter(num: any) {
       num = "u";
       console.log(`num ${num}`);
       link5 = link3 + num;
-      fetch(link5, requestOptions3)
+      fetch(link5, requestOptions)
         .then((response) => response.json())
         .then((data) => console.log(data));
 
@@ -231,7 +231,7 @@ export function numToLetter(num: any) {
       num = "v";
       console.log(`num ${num}`);
       link5 = link3 + num;
-      fetch(link5, requestOptions3)
+      fetch(link5, requestOptions)
         .then((response) => response.json())
         .then((data) => console.log(data));
 
@@ -241,7 +241,7 @@ export function numToLetter(num: any) {
       num = "w";
       console.log(`num ${num}`);
       link5 = link3 + num;
-      fetch(link5, requestOptions3)
+      fetch(link5, requestOptions)
         .then((response) => response.json())
         .then((data) => console.log(data));
 
@@ -251,7 +251,7 @@ export function numToLetter(num: any) {
       num = "x";
       console.log(`num ${num}`);
       link5 = link3 + num;
-      fetch(link5, requestOptions3)
+      fetch(link5, requestOptions)
         .then((response) => response.json())
         .then((data) => console.log(data));
 
@@ -261,7 +261,7 @@ export function numToLetter(num: any) {
       num = "y";
       console.log(`num ${num}`);
       link5 = link3 + num;
-      fetch(link5, requestOptions3)
+      fetch(link5, requestOptions)
         .then((response) => response.json())
         .then((data) => console.log(data));
 
@@ -271,7 +271,7 @@ export function numToLetter(num: any) {
       num = "z";
       console.log(`num ${num}`);
       link5 = link3 + num;
-      fetch(link5, requestOptions3)
+      fetch(link5, requestOptions)
         .then((response) => response.json())
         .then((data) => console.log(data));
 
