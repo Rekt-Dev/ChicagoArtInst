@@ -54,8 +54,8 @@
 .divWidth {
   
   display: flex;
-  align-items: baseline;
-  justify-content: right;
+  align-items: stretch
+  justify-content: left;
   flex-direction:row;
 
 }
