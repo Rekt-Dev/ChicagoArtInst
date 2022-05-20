@@ -1,3 +1,5 @@
+import { requestOptions } from "./requestOptions";
+
 export function lucky() {
   console.log(`feeling lucky pressed`);
 
@@ -11,13 +13,7 @@ export function lucky() {
 
   const link2 = link1 + r;
 
-  const requestOptions1 = {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ title: "randoing the db through the api" })
-  };
-
-  fetch(link2, requestOptions1)
+  fetch(link2, requestOptions)
     .then((response) => response.json())
     .then((data) => console.log(data));
 }
