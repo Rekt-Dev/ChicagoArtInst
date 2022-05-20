@@ -23,8 +23,15 @@ export default function App() {
         }
 
       </div>
-      <OpenCard />
+      {json.map((obj) => (
 
+      <OpenCard 
+      key={obj.id}
+      artistName={obj.name}
+      title={obj.title}
+      year={obj.year}
+      />
+      ))}
     </div>
   );
 }
