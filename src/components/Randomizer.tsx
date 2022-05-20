@@ -1,3 +1,5 @@
+import { requestOptions } from "../services/requestOptions";
+
 export function numToLetter(num: any) {
   let value1 = Math.floor(Math.random() * 26);
   let r1 = (Math.random() * 1.1).toString(36).substring(2);
@@ -10,13 +12,7 @@ export function numToLetter(num: any) {
   let link5 = "";
   console.log(`link4 ${link4}`);
 
-  const requestOptions3 = {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ title: "randoing the db through the api" })
-  };
-
-  fetch(link5, requestOptions3)
+  fetch(link5, requestOptions)
     .then((response) => response.json())
     .then((data) => console.log(data));
 
@@ -25,7 +21,7 @@ export function numToLetter(num: any) {
       num = "a";
       console.log(`num ${num}`);
       link5 = link3 + num;
-      fetch(link5, requestOptions3)
+      fetch(link5, requestOptions)
         .then((response) => response.json())
         .then((data) => console.log(data));
 
