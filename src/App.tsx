@@ -30,6 +30,8 @@ export default function App() {
       artistName={obj.name}
       title={obj.title}
       year={obj.year}
+      location={obj.location}
+      displayedOn={obj.displayedOn}
       />
       ))}
     </div>
