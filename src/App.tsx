@@ -9,7 +9,6 @@ export default function App() {
   function cardDisplayer() {
     OpenCard();
     console.log("cardDisplayer activated ! ");
-    OpenCard;
   }
 
   return (
