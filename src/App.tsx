@@ -4,6 +4,7 @@ import { json } from "./services/importedData";
 import Card from "./components/Card";
 import Header from "./components/Header";
 import { OpenCard } from "./components/OpenCard";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 export default function App() {
   function cardDisplayer() {
