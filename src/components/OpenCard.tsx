@@ -1,10 +1,11 @@
 import mockLink from "./Card";
-export function OpenCard() {
-  console.log("card was clicked");
 
+export function OpenCard() {
   function getImageData() {
     console.log("getImageData invoked thru openCard");
   }
+  console.log("card was clicked");
+  getImageData();
 
   return (
     <div>
