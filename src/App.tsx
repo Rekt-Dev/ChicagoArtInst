@@ -3,7 +3,6 @@ import "./index.css";
 import { json } from "./services/importedData";
 import Card from "./components/Card";
 import Header from "./components/Header";
-import { OpenCard } from "./components/OpenCard";
 import { CardDisplayer } from "./services/CardDisplayer";
 
 export default function App() {
