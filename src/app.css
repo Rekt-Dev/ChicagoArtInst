@@ -43,6 +43,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width:100%;
+  height:auto;
 }
 
 .centered {
@@ -50,6 +52,7 @@
   justify-content: center;
   align-items: center;
   width:100%;
+  
 }
 
 .divWidth {
@@ -72,4 +75,5 @@
   align-items: center;
   font-size: 350%;
   font-weight: x-large;
+  
 }

@@ -7,7 +7,7 @@ function Card(props: any) {
   console.log(mockLink);
   return (
     <div className="">
-      <img width="100" height="121" alt=" 3 cats" src={mockLink} />
+      <img width="90%" height="90%" alt=" 3 cats" src={mockLink} />
       <ul>
         {}
         <li>{props.artistName || "artist name"}</li>

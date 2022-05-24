@@ -7,7 +7,6 @@ import { OpenCard } from "./components/OpenCard";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 export default function App() {
-  
   function cardDisplayer() {
     OpenCard();
     console.log("cardDisplayer activated ! ");
@@ -26,6 +25,10 @@ export default function App() {
           />
         ))}
       </div>
+
+      <br></br>
+      <br></br>
+
       {json.map((obj) => (
         <OpenCard
           key={obj.id}
