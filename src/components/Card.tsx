@@ -8,7 +8,7 @@ function Card(props: any) {
   console.log(mockLink);
 
   return (
-    <div className="">
+    <div oclassName="">
       <img width="90%" height="90%" alt=" 3 cats" src={mockLink} />
       <ul>
         {}

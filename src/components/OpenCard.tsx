@@ -3,6 +3,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 export function OpenCard() {
+
   function getImageData() {
     console.log("getImageData invoked thru openCard");
   }
@@ -16,16 +17,17 @@ export function OpenCard() {
   return (
     <div className="center">
       <div>
-        <ul>
-          <li className="liFont">a piece of data loren ipsumish </li>
+      
+        <div>
+          <img width="1250" height="650" src={url} alt="a beautiful piece" />
+        </div>
+          <ul>
+          <li className="liFont">a piece of data openCard loren ipsumish </li>
           <li className="liFont">a piece of data loren ipsumish </li>
           <li className="liFont">a piece of data loren ipsumish </li>
           <li className="liFont">a piece of data loren ipsumish </li>
           <li className="liFont">a piece of data loren ipsumish </li>
         </ul>
-        <div>
-          <img width="1250" height="650" src={url} alt="a beautiful piece" />
-        </div>
       </div>
     </div>
   );
