@@ -13,7 +13,7 @@ function Header(type: any) {
   }
 
   const [find, setFind] = useState("");
-  const chicagoLink = "https://api.artic.edu/api/v1/artworks/search?q="; 
+  const chicagoLink = "https://api.artic.edu/api/v1/artworks/search?q=";
 
   function HandleChange(event: any) {
     const e = event.target.value;
@@ -37,8 +37,8 @@ function Header(type: any) {
         <button onClick={lucky} className="button" type="button">
           Randomize it !
         </button>
-        <br />
       </div>
+      <br></br>
     </div>
   );
 }
