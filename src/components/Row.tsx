@@ -1,0 +1,20 @@
+import { CardDisplayer } from "../services/CardDisplayer";
+import { json } from "../services/importedData";
+import Card from "../components/Card";
+
+export function Row() {
+  console.log(`row was activ8d`);
+
+  return (
+    <div className="center" onClick={CardDisplayer}>
+      {json.map((obj) => (
+        <Card
+          key={obj.id}
+          artistName={obj.name}
+          title={obj.title}
+          year={obj.year}
+        />
+      ))}
+    </div>
+  );
+}
