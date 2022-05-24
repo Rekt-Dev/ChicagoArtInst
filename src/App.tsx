@@ -4,17 +4,13 @@ import { json } from "./services/importedData";
 import Card from "./components/Card";
 import Header from "./components/Header";
 import { OpenCard } from "./components/OpenCard";
+import { CardDisplayer } from "./services/CardDisplayer";
 
 export default function App() {
-  function cardDisplayer() {
-    OpenCard();
-    console.log("cardDisplayer activated ! ");
-  }
-
   return (
     <div>
       <Header />
-      <div className="divWidth" onClick={cardDisplayer}>
+      <div className="divWidth" onClick={CardDisplayer}>
         {json.map((obj) => (
           <Card
             key={obj.id}
@@ -25,7 +21,7 @@ export default function App() {
         ))}
       </div>
       <br></br>
-      <br></br>) ) }
+      <br></br>) )
     </div>
   );
 }
