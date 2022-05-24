@@ -10,7 +10,7 @@ export default function App() {
   return (
     <div>
       <Header />
-      <div className="divWidth" onClick={CardDisplayer}>
+      <div className="center" onClick={CardDisplayer}>
         {json.map((obj) => (
           <Card
             key={obj.id}
@@ -20,7 +20,7 @@ export default function App() {
           />
         ))}
       </div>
-      <div className="divWidth" onClick={CardDisplayer}>
+      <div className="center" onClick={CardDisplayer}>
         {json.map((obj) => (
           <Card
             key={obj.id}
@@ -30,7 +30,7 @@ export default function App() {
           />
         ))}
       </div>
-      <div className="divWidth" onClick={CardDisplayer}>
+      <div className="center" onClick={CardDisplayer}>
         {json.map((obj) => (
           <Card
             key={obj.id}
@@ -40,7 +40,7 @@ export default function App() {
           />
         ))}
       </div>
-      <div className="divWidth" onClick={CardDisplayer}>
+      <div className="center" onClick={CardDisplayer}>
         {json.map((obj) => (
           <Card
             key={obj.id}

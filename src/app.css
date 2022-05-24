@@ -59,13 +59,12 @@
   
   display: flex;
   align-items: 
-  justify-content: space-around ;
   flex-direction:row;
   width:100%;
+  height:80%;
   flex: 1;
   top: 60;
   flexDirection: "row",
-  justifyContent: "space-around",
   flexWrap: "wrap",
   marginBottom: 1
 }
@@ -73,7 +72,7 @@
 
 .liFont {
 
-  height: 100%;
+  height: 80%;
   width: 100%;
   display: flex;
   justify-content: space-between ;
