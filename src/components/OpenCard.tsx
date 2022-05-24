@@ -19,7 +19,7 @@ export function OpenCard() {
           <img width="1250" height="650" src={url} alt="a beautiful piece" />
         </div>
         <ul>
-          <li className="liFont">a piece of data openCard loren ipsumish </li>
+          <li className="liFont">a piece of data loren ipsumish </li>
           <li className="liFont">a piece of data loren ipsumish </li>
           <li className="liFont">a piece of data loren ipsumish </li>
           <li className="liFont">a piece of data loren ipsumish </li>
