@@ -4,7 +4,6 @@ import { json } from "./services/importedData";
 import Card from "./components/Card";
 import Header from "./components/Header";
 import { OpenCard } from "./components/OpenCard";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 export default function App() {
   function cardDisplayer() {
@@ -25,20 +24,8 @@ export default function App() {
           />
         ))}
       </div>
-
       <br></br>
-      <br></br>
-
-      {json.map((obj) => (
-        <OpenCard
-          key={obj.id}
-          artistName={obj.name}
-          title={obj.title}
-          year={obj.year}
-          location={obj.location}
-          displayedOn={obj.displayedOn}
-        />
-      ))}
+      <br></br>) ) }
     </div>
   );
 }
