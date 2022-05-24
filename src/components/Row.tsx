@@ -6,7 +6,7 @@ export function Row() {
   console.log(`row was activ8d`);
 
   return (
-    <div className="center" onClick={CardDisplayer}>
+    <div className="center">
       {json.map((obj) => (
         <Card
           key={obj.id}
