@@ -4,10 +4,5 @@ export const json = [
   { name: "third", title: "best artwork ever", year: "1883", id: "3" },
   { name: "fourth", title: "a blue moon", year: "1434", id: "4" },
   { name: "fifth", title: "great title", year: "1929", id: "5" },
-  { name: "fifth", title: "great title", year: "1929", id: "6" },
-  { name: "fifth", title: "great title", year: "1929", id: "7" },
-  { name: "fourth", title: "a blue moon", year: "1434", id: "4" },
-  { name: "fourth", title: "a blue moon", year: "1434", id: "4" },
-  { name: "fourth", title: "a blue moon", year: "1434", id: "4" },
-
+  { name: "fifth", title: "great title", year: "1929", id: "6" }
 ];
