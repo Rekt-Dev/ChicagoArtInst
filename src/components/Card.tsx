@@ -10,6 +10,10 @@ function Card(props: any) {
 
   console.log(mockLink);
 
+  function testLi(){
+    console.log(`li has been pressed bish`)
+  }
+
   return (
     <div className="">
       <img
@@ -22,7 +26,7 @@ function Card(props: any) {
       <ul>
         {}
         <li onClick={GoToArtist}>{props.artistName || "artist name"}</li>
-        <li>{props.title}</li>
+        <li onClick={testLi}>{props.title}</li>
         <li>{props.year}</li>
       </ul>
     </div>
