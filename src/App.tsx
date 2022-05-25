@@ -19,9 +19,10 @@ export default function App() {
       <Row />
       <Row />
       <Row />
-      <Link to="/2_10">pages : 2-10</Link> 
-      <Link to="/10_20">pages : 10-20</Link> 
-      <Link to="/20_30">pages : 20-30</Link> 
+      <Link to="/2_10">pages : 2-10 | </Link>
+      <Link to="/11_20">pages : 11-20 | </Link>
+      <Link to="/21_30">pages : 21-30 | </Link>
+      <Link to="/31_40">pages : 31-40 | </Link>
     </div>
   );
 }
