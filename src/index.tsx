@@ -5,6 +5,7 @@ import App from "./App";
 import { TestComponent } from "./components/TestComponent";
 import { Row } from "./components/Row";
 import { OpenCard } from "./components/OpenCard";
+
 const rootElement = document.getElementById("root");
 const root = ReactDOMClient.createRoot(rootElement);
 

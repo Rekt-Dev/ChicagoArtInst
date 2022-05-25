@@ -1,6 +1,5 @@
 import React from "react";
 import "../app.css";
-import { CardDisplayer } from "../services/CardDisplayer";
 import { OpenCard } from "./OpenCard";
 import { GoToArtist } from "./GoToArtist";
 
@@ -9,7 +8,7 @@ export function testLi() {
 }
 export const mockLink = `https://www.artic.edu/iiif/2/1adf2696-8489-499b-cad2-821d7fde4b33/full/843,/0/default.jpg`;
 export function Card(props: any) {
-  const identifier = "229393";
+  // const identifier = "229393";
 
   console.log(mockLink);
 

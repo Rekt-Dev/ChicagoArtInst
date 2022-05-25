@@ -1,12 +1,8 @@
 import "./styles.css";
 import "./index.css";
-import { json } from "./services/importedData";
-import Card from "./components/Card";
 import Header from "./components/Header";
-import { CardDisplayer } from "./services/CardDisplayer";
 import { Link } from "react-router-dom";
 import { Row } from "./components/Row";
-import { OpenCard } from "./components/OpenCard";
 
 export default function App() {
   return (
