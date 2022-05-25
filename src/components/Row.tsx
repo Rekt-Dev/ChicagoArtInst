@@ -1,6 +1,6 @@
 import { CardDisplayer } from "../services/CardDisplayer";
 import { json } from "../services/importedData";
-import Card from "../components/Card";
+import { Card } from "../components/Card";
 
 export function Row() {
   console.log(`row was activ8d`);

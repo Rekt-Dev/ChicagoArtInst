@@ -4,15 +4,14 @@ import { CardDisplayer } from "../services/CardDisplayer";
 import { OpenCard } from "./OpenCard";
 import { GoToArtist } from "./GoToArtist";
 
+export function testLi() {
+  console.log(`li has been pressed bish`);
+}
 export const mockLink = `https://www.artic.edu/iiif/2/1adf2696-8489-499b-cad2-821d7fde4b33/full/843,/0/default.jpg`;
-function Card(props: any) {
+export function Card(props: any) {
   const identifier = "229393";
 
   console.log(mockLink);
-
-  function testLi(){
-    console.log(`li has been pressed bish`)
-  }
 
   return (
     <div className="">
@@ -32,5 +31,3 @@ function Card(props: any) {
     </div>
   );
 }
-
-export default Card;
