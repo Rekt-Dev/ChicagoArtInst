@@ -1,7 +1,6 @@
-import { lucky } from "../services/FeelingLucky";
+import { lucky } from "../services/feelingLucky";
 import React, { useState } from "react";
 import { requestOptions } from "../services/requestOptions";
-import { numToLetter } from "./Randomizer";
 
 function Header(type: any) {
   function concatSearch() {

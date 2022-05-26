@@ -1,6 +1,6 @@
 import { OpenCard } from "../components/OpenCard";
 
-export function CardDisplayer() {
+export function cardDisplayer() {
   OpenCard();
   console.log("cardDisplayer activated ! ");
 }

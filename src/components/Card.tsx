@@ -1,7 +1,7 @@
 import React from "react";
 import "../app.css";
-import { OpenCard } from "./OpenCard";
 import { GoToArtist } from "./GoToArtist";
+import { cardDisplayer } from "../services/cardDisplayer";
 
 export function testLi() {
   console.log(`li has been pressed bish`);
@@ -15,7 +15,7 @@ export function Card(props: any) {
   return (
     <div className="">
       <img
-        onClick={OpenCard}
+        onClick={cardDisplayer}
         width="90%"
         height="90%"
         alt=" 3 cats"
