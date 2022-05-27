@@ -4,6 +4,8 @@ import { requestOptions } from "../services/requestOptions";
 
 function Header(type: any) {
   function concatSearch() {
+    const chicagoLink = "https://api.artic.edu/api/v1/artworks/search?q=";
+
     const link = chicagoLink + find;
 
     fetch(link, requestOptions)
@@ -12,7 +14,6 @@ function Header(type: any) {
   }
 
   const [find, setFind] = useState("");
-  const chicagoLink = "https://api.artic.edu/api/v1/artworks/search?q=";
 
   function HandleChange(event: any) {
     const e = event.target.value;
