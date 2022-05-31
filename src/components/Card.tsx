@@ -10,8 +10,6 @@ export const mockLink = `https://www.artic.edu/iiif/2/1adf2696-8489-499b-cad2-82
 export function Card(props: any) {
   // const identifier = "229393";
 
-  console.log(mockLink);
-
   return (
     <div className="">
       <img
