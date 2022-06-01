@@ -8,16 +8,16 @@ export default function App() {
   return (
     <div>
       <Header />
-      {json.map((obj) => (
-        <Card
-          key={obj.id}
-          artistName={obj.name}
-          title={obj.title}
-          year={obj.year}
-        />
-      ))}
-
-      <Card />
+      <div className="center">
+        {json.map((obj) => (
+          <Card
+            key={obj.id}
+            artistName={obj.name}
+            title={obj.title}
+            year={obj.year}
+          />
+        ))}
+      </div>
       <Link to="/2_10">pages : 2-10 | </Link>
       <Link to="/11_20">pages : 11-20 | </Link>
       <Link to="/21_30">pages : 21-30 | </Link>
