@@ -3,7 +3,7 @@ import "./index.css";
 import Header from "./components/Header";
 import { Link } from "react-router-dom";
 import { Card } from "./components/Card";
-import {json} from "./services/json"
+import { json } from "./services/json";
 export default function App() {
   return (
     <div>
@@ -16,8 +16,8 @@ export default function App() {
           year={obj.year}
         />
       ))}
-      <Card />
 
+      <Card />
       <Link to="/2_10">pages : 2-10 | </Link>
       <Link to="/11_20">pages : 11-20 | </Link>
       <Link to="/21_30">pages : 21-30 | </Link>
