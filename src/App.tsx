@@ -3,12 +3,19 @@ import "./index.css";
 import Header from "./components/Header";
 import { Link } from "react-router-dom";
 import { Card } from "./components/Card";
-
+import {json} from "./services/json"
 export default function App() {
   return (
     <div>
       <Header />
-
+      {json.map((obj) => (
+        <Card
+          key={obj.id}
+          artistName={obj.name}
+          title={obj.title}
+          year={obj.year}
+        />
+      ))}
       <Card />
 
       <Link to="/2_10">pages : 2-10 | </Link>

@@ -14,8 +14,8 @@ export function Card(props: any) {
     <div className="">
       <img
         onClick={cardDisplayer}
-        width="90%"
-        height="90%"
+        width="20%"
+        height="20%"
         alt=" 3 cats"
         src={mockLink}
       />
