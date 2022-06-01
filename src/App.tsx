@@ -10,12 +10,14 @@ export default function App() {
       <Header />
       <div className="center">
         {json.map((obj) => (
-          <Card
-            key={obj.id}
-            artistName={obj.name}
-            title={obj.title}
-            year={obj.year}
-          />
+          <div className="">
+            <Card
+              key={obj.id}
+              artistName={obj.name}
+              title={obj.title}
+              year={obj.year}
+            />
+          </div>
         ))}
       </div>
       <Link to="/2_10">pages : 2-10 | </Link>
