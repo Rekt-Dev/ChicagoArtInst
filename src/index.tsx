@@ -13,9 +13,6 @@ root.render(
   <StrictMode>
     <BrowserRouter>
       <App />
-      <OpenCard />
-      <TestComponent />
-      <Row />
     </BrowserRouter>
   </StrictMode>
 );
