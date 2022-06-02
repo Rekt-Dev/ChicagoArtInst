@@ -8,7 +8,7 @@ export default function App() {
   return (
     <div>
       <Header />
-      <div className="center">
+      <div className="centered">
         {json.map((obj) => (
           <div className="">
             <Card
