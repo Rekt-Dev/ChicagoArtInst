@@ -11,8 +11,6 @@ const root = ReactDOMClient.createRoot(rootElement);
 
 root.render(
   <StrictMode>
-    <BrowserRouter>
       <App />
-    </BrowserRouter>
   </StrictMode>
 );
