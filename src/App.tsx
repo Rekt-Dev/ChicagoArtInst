@@ -1,14 +1,7 @@
 import "./styles.css";
 import "./index.css";
 import Header from "./components/Header";
-import {
-  Link,
-  BrowserRouter,
-  Routes,
-  Route,
-  Layout,
-  Home
-} from "react-router-dom";
+import { Link, BrowserRouter, Routes, Route } from "react-router-dom";
 import { Card } from "./components/Card";
 import { json } from "./services/json";
 import { OpenCard } from "./components/OpenCard";
