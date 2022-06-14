@@ -32,6 +32,7 @@ export default function App() {
                 artistName={obj.name}
                 title={obj.title}
                 year={obj.year}
+                hometown={obj.hometown}
               />
             </div>
           ))}

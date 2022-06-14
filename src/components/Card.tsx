@@ -4,7 +4,7 @@ import { GoToArtist } from "./GoToArtist";
 import { cardDisplayer } from "../services/cardDisplayer";
 
 export function testLi() {
-  console.log(`li has been pressed bish`);
+  console.log(`li has been pressed`);
 }
 export const mockLink = `https://www.artic.edu/iiif/2/1adf2696-8489-499b-cad2-821d7fde4b33/full/843,/0/default.jpg`;
 export function Card(props: any) {
@@ -24,6 +24,8 @@ export function Card(props: any) {
         <li onClick={GoToArtist}>{props.artistName || "artist name"}</li>
         <li onClick={testLi}>{props.title}</li>
         <li>{props.year}</li>
+
+        <li>{props.hometown}</li>
       </ul>
     </div>
   );
