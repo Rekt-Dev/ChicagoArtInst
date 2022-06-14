@@ -1,7 +1,7 @@
-import { OpenCard } from "../components/OpenCard";
+import { Card } from "../components/Card";
 
 export function cardDisplayer() {
   console.log("cardDisplayer activated ! ");
 
-  return <OpenCard />;
+  return <Card />;
 }
