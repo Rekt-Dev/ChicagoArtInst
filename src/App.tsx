@@ -6,7 +6,6 @@ import { Card } from "./components/Card";
 import { json } from "./services/json";
 import { OpenCard } from "./components/OpenCard";
 import { GoToArtist } from "./components/GoToArtist";
-import Navbar from "./components/NavBar";
 export default function App() {
   return (
     <div>
