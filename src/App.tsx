@@ -1,7 +1,7 @@
 import "./styles.css";
 import "./index.css";
 import Header from "./components/Header";
-import { Link, BrowserRouter, Routes, Route } from "react-router-dom";
+import { Link, BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Card } from "./components/Card";
 import { json } from "./services/json";
 import { OpenCard } from "./components/OpenCard";
@@ -10,9 +10,18 @@ export default function App() {
   return (
     <div>
       <Header />
-      <BrowserRouter>
+      <Router>
+        <Routes>
+          <Route path="/" element={<App />}>
+            <Route index element={<Home />} />
+            <Route path="teams" element={<Teams />}>
+              <Route path=":teamId" element={<Team />} />
+              <Route path="new" element={<NewTeamForm />} />
+              <Route index element={<LeagueStandings />} />
+            </Route>
+          </Route>
+        </Routes>
 
-         
         <div className="centered">
           {json.map((obj) => (
             <div className="">
@@ -30,7 +39,7 @@ export default function App() {
         <Link to="/11_20">pages : 11-20 | </Link>
         <Link to="/21_30">pages : 21-30 | </Link>
         <Link to="/31_40">pages : 31-40 | </Link>
-      </BrowserRouter>
+      </Router>
     </div>
   );
 }
