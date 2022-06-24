@@ -6,22 +6,15 @@ import { Card } from "./components/Card";
 import { json } from "./services/json";
 import { OpenCard } from "./components/OpenCard";
 import { GoToArtist } from "./components/GoToArtist";
+import { Home } from "./components/Home";
+import { Teams } from "./components/Teams";
+import { Team } from "./components/Team";
+
 export default function App() {
   return (
     <div>
       <Header />
       <Router>
-        <Routes>
-          <Route path="/" element={<App />}>
-            <Route index element={<Home />} />
-            <Route path="teams" element={<Teams />}>
-              <Route path=":teamId" element={<Team />} />
-              <Route path="new" element={<NewTeamForm />} />
-              <Route index element={<LeagueStandings />} />
-            </Route>
-          </Route>
-        </Routes>
-
         <div className="centered">
           {json.map((obj) => (
             <div className="">
