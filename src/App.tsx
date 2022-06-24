@@ -11,19 +11,8 @@ export default function App() {
     <div>
       <Header />
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Card />}>
-            <Route index element={<Card />} />
-            <Route path="blogs" element={<GoToArtist />} />
-            <Route path="*" element={<OpenCard />} />
-          </Route>
-        </Routes>
-        <div>
-          <Link to="OpenCard.tsx">OpenCard | </Link>
-          <Link to="/11_20">pages : 11-20 | </Link>
-          <Link to="/21_30">pages : 21-30 | </Link>
-          <Link to="/31_40">pages : 31-40 | </Link>
-        </div>
+
+         
         <div className="centered">
           {json.map((obj) => (
             <div className="">
